@@ -54,7 +54,7 @@ function AdminPage() {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                   <div className="flex flex-shrink-0 items-center z-50">
-                    <Link to="/Admin">
+                    <Link to="/admin">
                       <img className="h-10 w-auto" src="https://raw.githubusercontent.com/xxxdenisxxx777xxx/eDniproPrct/main/LogoAI.png" alt="Your Company" />
                     </Link>
                   </div>
@@ -62,8 +62,8 @@ function AdminPage() {
                 </div>
                 <div className=" sm:ml-6 sm:block">
                   <div className="flex space-x-4">
-                    <p className="bg-white-400 text-gray-600 rounded-md px-3 z-50 py-2 text-sm font-medium" aria-current="page"><Link to="/Admin/Note"><span className='text-lg'>Записи</span></Link></p>
-                    <p className="bg-white-400 text-gray-600 rounded-md px-3 z-50 py-2 text-sm font-medium" aria-current="page"><Link to="/Admin/Security"><span className='text-lg'>Депутаты</span></Link></p>
+                    <p className="bg-white-400 text-gray-600 rounded-md px-3 z-50 py-2 text-sm font-medium" aria-current="page"><Link to="/admin/note"><span className='text-lg'>Записи</span></Link></p>
+                    <p className="bg-white-400 text-gray-600 rounded-md px-3 z-50 py-2 text-sm font-medium" aria-current="page"><Link to="/admin/security"><span className='text-lg'>Депутаты</span></Link></p>
                     <button className='relative z-50' type='button' onClick={handleSignOut}><img className='w-6 mt-[-3px]' src="https://raw.githubusercontent.com/xxxdenisxxx777xxx/eDniproPrct/main/exit-icon.png" alt="alt29" /></button>
                   </div>
                 </div>
@@ -93,7 +93,7 @@ function AdminPage() {
           <div class="flex min-h-full flex-col justify-center px-6 py-12 lg:px-8">
             <div className="flex flex-1 items-center justify-center sm:items-stretch ">
               <div className="flex flex-shrink-0 items-center z-50">
-                <Link to="/Admin">
+                <Link to="/admin">
                   <img className="mx-auto h-[65px] w-auto" src="https://raw.githubusercontent.com/xxxdenisxxx777xxx/eDniproPrct/main/LogoAI.png" alt="Your Company" />
                 </Link>
               </div>

@@ -11,9 +11,9 @@ const AppRoute = () => {
         <Routes>
             <Route path="/" index element={<HomePage />} />
             <Route path="/infodep/:id" element={<DeputatsPage />} />
-            <Route path="/Admin" element={<AdminPage />} />
-            <Route path="/Admin/Security" element={<SecurityPage />} />
-            <Route path="/Admin/Note" element={<Note />} />
+            <Route path="admin" element={<AdminPage />} />
+            <Route path="admin/security" element={<SecurityPage />} />
+            <Route path="admin/note" element={<Note />} />
 
         </Routes>
     )
