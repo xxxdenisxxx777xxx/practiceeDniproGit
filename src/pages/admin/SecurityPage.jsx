@@ -42,7 +42,7 @@ function SecurityPage() {
 
     const fetchSecurityItems = async () => {
         try {
-            const response = await axios.get('http://localhost:3020/securityItems');
+            const response = await axios.get('http://test2.ednipro.dp.ua/securityItems');
             setSecurityItems(response.data);
         } catch (error) {
             console.error('Ошибка при получении данных:', error);
@@ -52,7 +52,7 @@ function SecurityPage() {
     const handleCreateItem = async (e) => {
         e.preventDefault()
         try {
-            await axios.post('http://localhost:3020/createSecurityItems', formData);
+            await axios.post('http://test2.ednipro.dp.ua/createSecurityItems', formData);
             setFormData({
                 name: '',
                 category: '',
@@ -88,7 +88,7 @@ function SecurityPage() {
 
     const handleUpdateItem = async () => {
         try {
-            await axios.put(`http://localhost:3020/updateSecurityItems/${selectedItemId}`, editedItem);
+            await axios.put(`http://test2.ednipro.dp.ua/updateSecurityItems/${selectedItemId}`, editedItem);
             setEditedItem({
                 name: '',
                 category: '',
@@ -112,7 +112,7 @@ function SecurityPage() {
 
     const handleDeleteItem = async (id) => {
         try {
-            await axios.delete(`http://localhost:3020/deleteSecurityItems/${id}`);
+            await axios.delete(`http://test2.ednipro.dp.ua/deleteSecurityItems/${id}`);
             setSecurityItems(securityItems.filter(item => item._id !== id));
         } catch (error) {
             console.error('Ошибка при удалении элемента:', error);
