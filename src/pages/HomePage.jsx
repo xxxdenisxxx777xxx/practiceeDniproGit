@@ -22,7 +22,7 @@ const HomePage = () => {
     };
 
     useEffect(() => {
-        axios.get(`http://test2.ednipro.dp.ua/securityItems`)
+        axios.get(`https://test2.ednipro.dp.ua/securityItems`)
             .then(response => {
                 setData(response.data);
                 setFilteredData(response.data)
