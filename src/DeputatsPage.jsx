@@ -38,7 +38,7 @@ function DeputatsPage() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const response = await fetch('https://test2.ednipro.dp.ua/createNoteItems', {
+            const response = await fetch('http://localhost:3020/createNoteItems', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -65,7 +65,7 @@ function DeputatsPage() {
     };
 
     useEffect(() => {
-        axios.get(`https://test2.ednipro.dp.ua/securityItems/${id}`)
+        axios.get(`http://localhost:3020/securityItems/${id}`)
             .then(response => {
                 setData(response.data);
             })

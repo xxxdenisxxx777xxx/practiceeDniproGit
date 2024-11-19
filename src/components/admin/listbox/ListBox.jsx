@@ -81,7 +81,7 @@ export default function Example() {
     const [notes, setNotes] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://test2.ednipro.dp.ua/securityItems`)
+        axios.get(`http://localhost:3020/securityItems`)
             .then(response => {
                 setData(response.data);
                 setSelected(response.data[0])
@@ -93,7 +93,7 @@ export default function Example() {
 
     useEffect(() => {
         if (selected) {
-            axios.get(`https://test2.ednipro.dp.ua/noteItems/${selected._id}`).then(response => {
+            axios.get(`http://localhost:3020/noteItems/${selected._id}`).then(response => {
                 setNotes(response.data)
             }).catch(error => {
                 console.error('Error fetching data:', error);
